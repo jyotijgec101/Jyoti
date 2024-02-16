@@ -4,61 +4,47 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import annualsports from "../images/anualspotsday.jpg"
+import annualsports from "../images/anualspotsday.jpg";
 // import required modules
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import PerformanceCard from "./PerformanceCard";
-import annualsports2 from "../images/annualsportsday2.jpg"
-import annualsports3 from "../images/annualsportsday3.jpg"
-import jeclet2k23 from "../images/jeclat2k23.jpg"
-import jeclet2k231 from "../images/jeclat2k23 1.jpg"
-import fest2011 from "../images/Fest2011.jpg"
-import "./performancestyle.css"
+import annualsports2 from "../images/annualsportsday2.jpg";
+import annualsports3 from "../images/annualsportsday3.jpg";
+import jeclet2k23 from "../images/jeclat2k23.jpg";
+import jeclet2k231 from "../images/jeclat2k23 1.jpg";
+import fest2011 from "../images/Fest2011.jpg";
+import "./performancestyle.css";
 const data = [
   {
     id: 1,
     img: `${annualsports}`,
-    title:
-      "Annual Sports Day",
-    
+    title: "Annual Sports Day",
   },
   {
     id: 2,
     img: `${annualsports2}`,
-    title:
-      "Annual Sports Day",
-    
+    title: "Annual Sports Day",
   },
   {
     id: 3,
     img: `${annualsports3}`,
-    title:
-      "Annual Sports Day",
-    
+    title: "Annual Sports Day",
   },
   {
     id: 3,
     img: `${jeclet2k23}`,
-    title:
-      "Jeclet 2k23",
-    
+    title: "Jeclet 2k23",
   },
   {
     id: 4,
     img: `${jeclet2k231}`,
-    title:
-      "Jeclet 2k23",
-    
+    title: "Jeclet 2k23",
   },
   {
     id: 5,
     img: `${fest2011}`,
-    title:
-      "Fest 2011",
-    
+    title: "Fest 2011",
   },
-  
- 
 ];
 
 const Achievements = () => {
@@ -82,10 +68,12 @@ const Achievements = () => {
   return (
     <div className="background">
       <div className=" p-6  text-center ">
-      <div className='flex reveal slidedown justify-center pb-7 items-center flex-col'>
-        <div className='font-medium  text-amber-700 md:text-4xl  text-3xl lg:text-4xl'>Performance & Adwards</div>
-        <div className="border-[3px] mt-2  rounded  border-orange-800 w-[15%] lg:w-[8%]"></div>
-      </div>
+        <div className="flex reveal slidedown justify-center items-center flex-col">
+          <div className="font-medium  text-amber-700 md:text-4xl  text-3xl lg:text-4xl">
+            Performance & Adwards
+          </div>
+          <div className="border-[3px] mt-2  rounded  border-orange-800 w-[15%] lg:w-[8%]"></div>
+        </div>
 
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
@@ -101,8 +89,8 @@ const Achievements = () => {
             "--swiper-navigation-font": "500",
             "--swiper-pagination-color": "orange",
             "padding-bottom": "10px",
-            "paddingLeft": "20px",
-            "paddingRight": "20px",
+            paddingLeft: "20px",
+            paddingRight: "20px",
           }}
           pagination={{
             clickable: true,
@@ -124,12 +112,17 @@ const Achievements = () => {
           navigation
           // pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
-          
+
           className="mySwipe pt-14 gap-8 reveal slideup"
         >
           {data.map((e) => (
             <SwiperSlide>
-              <PerformanceCard key={e.id} title={e.title} img={e.img} pad={e.pad} />
+              <PerformanceCard
+                key={e.id}
+                title={e.title}
+                img={e.img}
+                pad={e.pad}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

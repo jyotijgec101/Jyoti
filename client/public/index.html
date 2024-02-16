@@ -52,89 +52,12 @@
       background: #b55506;
       border-radius: 20px;
     }
-    .loading {
-      display: none;
-    }
-
-    .loader {
-      background-image: url(/src/components/images/paper.png);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .ring {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 0px solid black;
-      position: absolute;
-    }
-
-    .ring:nth-child(1) {
-      border-bottom-width: 8px;
-      border-color: rgb(7, 48, 253);
-      animation: animate 2s linear infinite;
-    }
-
-    @keyframes animate {
-      from {
-        transform: rotateX(30deg) rotateY(-45deg) rotateZ(0deg);
-      }
-
-      to {
-        transform: rotateX(30deg) rotateY(-45deg) rotateZ(360deg);
-      }
-    }
-
-    .ring:nth-child(2) {
-      border-right: 8px solid rgba(9, 209, 244, 0.979);
-      animation: animes 2s linear infinite;
-    }
-
-    @keyframes animes {
-      from {
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-      }
-
-      to {
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-      }
-    }
-
-    .ring:nth-child(3) {
-      border-left: 8px solid rgba(242, 127, 101, 0.979);
-      animation: animess 2s linear infinite;
-    }
-
-    @keyframes animess {
-      from {
-        transform: rotateX(35deg) rotateY(55deg) rotate(0);
-      }
-
-      to {
-        transform: rotateX(35deg) rotateY(55deg) rotatez(360deg);
-      }
-    }
-
-    .ring:nth-child(4) {
-      border: 2px solid rgb(180, 19, 174);
-    }
-
-    .loader h1 {
-      color: rgba(15, 209, 243, 0.998);
-    }
+    
   </style>
-  <body oncontextmenu="return false">
-    <div class="loader">
-      <div class="ring"></div>
-      <div class="ring"></div>
-      <div class="ring"></div>
-      <div class="ring"></div>
-    </div>
+  <body >
+    
 
-    <div class="loading" id="root"></div>
+    <div  id="root"></div>
 
     <!--
       This HTML file is a template.
@@ -146,11 +69,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      $(window).on("load", function () {
-        $(".loader").fadeOut(1000);
-        $(".loading").fadeIn(3500);
-      });
-    </script>
+   
   </body>
 </html>

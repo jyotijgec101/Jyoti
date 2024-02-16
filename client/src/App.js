@@ -17,7 +17,16 @@ import SignUp from "./components/Admin/SignUp";
 import Login from "./components/Admin/Login";
 import Logout from "./components/Admin/Logout";
 import UserEdit from "./components/Admin/UserEdit";
+import { useEffect, useState } from "react";
+import Loader from "./components/Loader/Loader";
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1500);
+  }, []);
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <>
       <NavBar />
