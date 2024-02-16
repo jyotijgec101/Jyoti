@@ -7,7 +7,7 @@ const contactrouter = require("./router/contact-router")
 const adminrouter = require("./router/admin-router");
 const connectDb = require("./utils/db");
 const corsoption = {
-    origin : "http://localhost:3000",
+    origin : ["http://localhost:3000","https://jyoti-mern-9yru.vercel.app/"],
     methods : "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials : true, 
 }
