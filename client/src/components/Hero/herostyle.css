@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.herobackground{
+    background-image: url(/src/components/images/herobackground.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
+@media (max-width: 480px ) {
+   .herobackground{
+    background-image: url(/src/components/images/paper.png);
+   }
+}
+.text-style{
+    font-family: 'Rubik', sans-serif;
+}
+.trans{
+    animation: 1s ease-in slideInRight;
+}
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

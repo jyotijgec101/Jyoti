@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Playfair+Display&display=swap");
+nav {
+  background-color: orange;
+  width: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(98, 62, 8);
+  font-size: 25px;
+  font-weight:600;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+nav a:hover {
+  background-color: rgba(189, 125, 30, 0.587);
+}
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+.backgroundnav{
+  background-image: url(/src/components/images/nav.png);
+  
+}

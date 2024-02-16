@@ -1,0 +1,15 @@
+.body {
+    /* background-image: url(jyotilogo.jpg); */
+    background-size: cover;
+    font-style: italic;
+    font-size: large;
+    color: rgb(10, 10, 10);
+    width: 100%;
+    /* background-color: rgb(195, 131, 83); */
+    background-image: linear-gradient(rgb(191, 99, 57), rgb(197, 184, 43));
+  }
+  
+  .form {
+    text-align: center;
+  }
+  

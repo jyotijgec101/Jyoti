@@ -1,0 +1,12 @@
+const express = require("express");
+const router = express.Router();
+const admin = require("../controller/admin-controller");
+router.route('/users').get(admin.getAllUsers);
+router.route('/contacts').get(admin.getAllContacts);
+router.route('/users/delete/:id').delete(admin.getuserdeletebyid);
+router.route('/service').post(admin.addservices);
+router.route('/servicelist').get(admin.getServices);
+router.route('/servicelist/delete/:id').delete(admin.deleteService);
+router.route('/users/:id').get(admin.getSingleUser);
+router.route('/users/update/:id').patch(admin.updateuser);
+module.exports=router;
