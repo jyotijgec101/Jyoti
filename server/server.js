@@ -7,7 +7,7 @@ const contactrouter = require("./router/contact-router")
 const adminrouter = require("./router/admin-router");
 const connectDb = require("./utils/db");
 const corsoption = {
-    origin : "https://jyoti-jgec-new.vercel.app",
+    origin : process.env.FRONT_URL,
     methods : "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials : true, 
 }

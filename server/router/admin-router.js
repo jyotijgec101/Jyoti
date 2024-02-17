@@ -9,4 +9,6 @@ router.route('/servicelist').get(admin.getServices);
 router.route('/servicelist/delete/:id').delete(admin.deleteService);
 router.route('/users/:id').get(admin.getSingleUser);
 router.route('/users/update/:id').patch(admin.updateuser);
+router.route('/servicelist/:id').get(admin.getSinglenotice);
+router.route('/servicelist/update/:id').patch(admin.updatenotice);
 module.exports=router;

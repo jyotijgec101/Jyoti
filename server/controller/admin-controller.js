@@ -99,6 +99,27 @@ const updateuser = async (req, res) => {
   }
 };
 
+const getSinglenotice = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const data = await Service.findOne({ _id: id });
+    return res.status(200).json(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const updatenotice = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const data = req.body;
+    const updatedata = await Service.updateOne({ _id: id }, { $set: data });
+    return res.status(201).json(updatedata);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 module.exports = {
   getAllUsers,
   getAllContacts,
@@ -108,4 +129,6 @@ module.exports = {
   deleteService,
   getSingleUser,
   updateuser,
+  getSinglenotice,
+  updatenotice,
 };
