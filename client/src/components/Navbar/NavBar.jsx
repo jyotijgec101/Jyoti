@@ -170,25 +170,27 @@ const NavBar = () => {
                   Admin
                 </NavLink>
               </li>
-              
+              <li>
+
               <NavLink
                 to="/logout"
                 className="md:text-xl lg:text-2xl"
                 style={({ isActive }) =>
-                  isActive
-                    ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
-                    : {}
-                }
-                onClick={scrollToTop}
+                isActive
+                ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
+                : {}
+              }
+              onClick={scrollToTop}
               >
                 Logout
               </NavLink>
+                </li>
             </>
           ) : null}
         </ul>
       </nav>
       {!show ? (
-        <nav className=" top-0   w-full bg-orange-400  z-10 sticky overflow-hidden">
+        <nav className=" top-0    w-full bg-orange-400  z-10 sticky overflow-hidden">
           <div
             className="lg:hidden pt-2 bg-orange-400 w-full md:hidden  flex justify-end   text-2xl font-bold p-4 "
             onClick={handleShow}
@@ -205,7 +207,7 @@ const NavBar = () => {
                 className="md:text-xl text-[20px] lg:text-2xl"
                 style={({ isActive }) =>
                   isActive
-                    ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
+                    ? { backgroundColor: "rgba(189, 125, 30, 0.587)",width:"100%" }
                     : {}
                 }
                 onClick={scrollToTop}
@@ -288,7 +290,7 @@ const NavBar = () => {
                 <li>
                   <NavLink
                     to="/admin/users"
-                    className="md:text-xl lg:text-2xl"
+                    className="md:text-xl text-xl lg:text-2xl"
                     style={({ isActive }) =>
                       isActive
                         ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
@@ -299,18 +301,21 @@ const NavBar = () => {
                     Admin
                   </NavLink>
                 </li>
+                <li>
+
                 <NavLink
                   to="/logout"
-                  className="md:text-xl lg:text-2xl"
+                  className="md:text-xl text-xl lg:text-2xl"
                   style={({ isActive }) =>
-                    isActive
-                      ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
-                      : {}
-                  }
-                  onClick={scrollToTop}
+                  isActive
+                  ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
+                  : {}
+                }
+                onClick={scrollToTop}
                 >
                   Logout
                 </NavLink>
+                  </li>
               </>
             ) : null}
           </ul>

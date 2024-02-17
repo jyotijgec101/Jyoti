@@ -3,19 +3,18 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useAuth } from "../Store/auth";
-const UserEdit = () => {
-  const {apiUrl} = useAuth();
+const NoticeEdit = () => {
+  const {apiUrl,getServices} = useAuth();
   const navigate = useNavigate();
   const [user, setuser] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    isAdmin: "",
+    url: "",
+    title: "",
+    date: "",
   });
   const id = useParams();
-  const getSingleUser = async () => {
+  const getSingleNotice = async () => {
     const response = await fetch(
-      `${apiUrl}/api/admin/users/${id.id}`,
+      `${apiUrl}/api/admin/servicelist/${id.id}`,
       {
         method: "GET",
       }
@@ -27,13 +26,13 @@ const UserEdit = () => {
   };
 
   useEffect(() => {
-    getSingleUser();
+    getSingleNotice();
   }, []);
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `${apiUrl}/api/admin/users/update/${id.id}`,
+        `${apiUrl}/api/admin/servicelist/update/${id.id}`,
         {
           method: "PATCH",
           headers: {
@@ -44,8 +43,8 @@ const UserEdit = () => {
       );
       if (response.ok) {
         toast.success("Updated Successfully");
-        getSingleUser();
-        navigate("/admin/users");
+        navigate("/admin/notices");
+        getServices();
       }
     } catch (error) {
       console.log(error);
@@ -75,7 +74,7 @@ const UserEdit = () => {
               <div className="flex -mx-3">
                   <div className="w-full px-3 mb-5">
                     <label htmlFor="" className="text-xs font-semibold px-1">
-                      First Name
+                      URL
                     </label>
                     <div className="flex">
                       <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
@@ -84,9 +83,9 @@ const UserEdit = () => {
                       <input
                         type="text"
                         className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                        name="firstname"
+                        name="url"
                         onChange={handleinput}
-                        value={user.firstname}
+                        value={user.url}
                         placeholder=""
                       />
                     </div>
@@ -95,7 +94,7 @@ const UserEdit = () => {
                 <div className="flex -mx-3">
                   <div className="w-full px-3 mb-5">
                     <label htmlFor="" className="text-xs font-semibold px-1">
-                      Last Name
+                      Title
                     </label>
                     <div className="flex">
                       <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
@@ -104,9 +103,9 @@ const UserEdit = () => {
                       <input
                         type="text"
                         className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                        name="lastname"
+                        name="title"
                         onChange={handleinput}
-                        value={user.lastname}
+                        value={user.title}
                         placeholder=""
                       />
                     </div>
@@ -115,39 +114,18 @@ const UserEdit = () => {
                 <div className="flex -mx-3">
                   <div className="w-full px-3 mb-5">
                     <label htmlFor="" className="text-xs font-semibold px-1">
-                      Email
+                      Date
                     </label>
                     <div className="flex">
                       <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                         <i className="mdi mdi-email-outline text-gray-400 text-lg"></i>
                       </div>
                       <input
-                        type="email"
+                        type="date"
                         className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                        name="email"
+                        name="date"
                         onChange={handleinput}
-                        value={user.email}
-                        placeholder="example@gmail.com"
-                      />
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-12">
-                    <label htmlFor="" className="text-xs font-semibold px-1">
-                      Admin
-                    </label>
-                    <div className="flex">
-                      <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                        <i className="mdi mdi-lock-outline text-gray-400 text-lg"></i>
-                      </div>
-                      <input
-                        type="boolean"
-                        className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                        name="isAdmin"
-                        onChange={handleinput}
-                        value={user.isAdmin}
+                        value={user.date}
                         placeholder=""
                       />
                     </div>
@@ -172,4 +150,4 @@ const UserEdit = () => {
   );
 };
 
-export default UserEdit;
+export default NoticeEdit;

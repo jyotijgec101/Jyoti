@@ -73,10 +73,10 @@ const SignUp = () => {
 
   return (
     <>
-      <div class="min-w-screen min-h-screen bg-gray-300 flex items-center justify-center px-5 py-5">
-        <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-[80%] overflow-hidden ">
-          <div class="md:flex w-full">
-            <div class="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">
+      <div className="min-w-screen min-h-screen bg-gray-300 flex items-center justify-center px-5 py-5">
+        <div className="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-[80%] overflow-hidden ">
+          <div className="md:flex w-full">
+            <div className="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">
               <svg
                 id="a87032b8-5b37-4b7e-a4d9-4dbfbe394641"
                 data-name="Layer 1"
@@ -281,24 +281,24 @@ const SignUp = () => {
                 />
               </svg>
             </div>
-            <div class="w-full md:w-1/2 py-10 px-5 md:px-10">
-              <div class="text-center mb-10">
-                <h1 class="font-bold text-3xl text-gray-900">REGISTER</h1>
+            <div className="w-full md:w-1/2 py-10 px-5 md:px-10">
+              <div className="text-center mb-10">
+                <h1 className="font-bold text-3xl text-gray-900">REGISTER</h1>
                 <p>Enter your information to register</p>
               </div>
               <form onSubmit={handlesubmit}>
-                <div class="flex -mx-3">
-                  <div class="w-1/2 px-3 mb-5">
-                    <label for="" class="text-xs font-semibold px-1">
+                <div className="flex -mx-3">
+                  <div className="w-1/2 px-3 mb-5">
+                    <label htmlFor="" className="text-xs font-semibold px-1">
                       First name
                     </label>
-                    <div class="flex">
-                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                        <i class="mdi mdi-account-outline text-gray-400 text-lg"></i>
+                    <div className="flex">
+                      <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i className="mdi mdi-account-outline text-gray-400 text-lg"></i>
                       </div>
                       <input
                         type="text"
-                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                        className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                         name="firstname"
                         onChange={handleinput}
                         value={user.firstname}
@@ -306,17 +306,17 @@ const SignUp = () => {
                       />
                     </div>
                   </div>
-                  <div class="w-1/2 px-3 mb-5">
-                    <label for="" class="text-xs font-semibold px-1">
+                  <div className="w-1/2 px-3 mb-5">
+                    <label htmlFor="" className="text-xs font-semibold px-1">
                       Last name
                     </label>
-                    <div class="flex">
-                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                        <i class="mdi mdi-account-outline text-gray-400 text-lg"></i>
+                    <div className="flex">
+                      <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i className="mdi mdi-account-outline text-gray-400 text-lg"></i>
                       </div>
                       <input
                         type="text"
-                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                        className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                         name="lastname"
                         onChange={handleinput}
                         value={user.lastname}
@@ -325,18 +325,18 @@ const SignUp = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex -mx-3">
-                  <div class="w-1/2 px-3 mb-5">
-                    <label for="" class="text-xs font-semibold px-1">
+                <div className="flex -mx-3">
+                  <div className="w-1/2 px-3 mb-5">
+                    <label htmlFor="" className="text-xs font-semibold px-1">
                       Department
                     </label>
-                    <div class="flex">
-                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                    <div className="flex">
+                      <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                         <IoSchoolSharp className="text-gray-400 text-lg" />
                       </div>
                       <input
                         type="text"
-                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                        className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                         name="department"
                         onChange={handleinput}
                         value={user.department}
@@ -344,17 +344,17 @@ const SignUp = () => {
                       />
                     </div>
                   </div>
-                  <div class="w-1/2 px-3 mb-5">
-                    <label for="" class="text-xs font-semibold px-1">
+                  <div className="w-1/2 px-3 mb-5">
+                    <label htmlFor="" className="text-xs font-semibold px-1">
                       Year
                     </label>
-                    <div class="flex">
-                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                    <div className="flex">
+                      <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                         <MdOutlineAccessTimeFilled className="text-gray-400 text-lg" />
                       </div>
                       <input
                         type="text"
-                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                        className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                         name="year"
                         onChange={handleinput}
                         value={user.year}
@@ -363,18 +363,18 @@ const SignUp = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex -mx-3">
-                  <div class="w-full px-3 mb-5">
-                    <label for="" class="text-xs font-semibold px-1">
+                <div className="flex -mx-3">
+                  <div className="w-full px-3 mb-5">
+                    <label htmlFor="" className="text-xs font-semibold px-1">
                       Email
                     </label>
-                    <div class="flex">
-                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                        <i class="mdi mdi-email-outline text-gray-400 text-lg"></i>
+                    <div className="flex">
+                      <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i className="mdi mdi-email-outline text-gray-400 text-lg"></i>
                       </div>
                       <input
                         type="email"
-                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                        className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                         name="email"
                         onChange={handleinput}
                         value={user.email}
@@ -383,18 +383,18 @@ const SignUp = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex -mx-3">
-                  <div class="w-full px-3 mb-12">
-                    <label for="" class="text-xs font-semibold px-1">
+                <div className="flex -mx-3">
+                  <div className="w-full px-3 mb-12">
+                    <label htmlFor="" className="text-xs font-semibold px-1">
                       Password
                     </label>
-                    <div class="flex">
-                      <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                        <i class="mdi mdi-lock-outline text-gray-400 text-lg"></i>
+                    <div className="flex">
+                      <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                        <i className="mdi mdi-lock-outline text-gray-400 text-lg"></i>
                       </div>
                       <input
                         type="password"
-                        class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
+                        className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                         name="password"
                         onChange={handleinput}
                         value={user.password}
@@ -403,11 +403,11 @@ const SignUp = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex -mx-3">
-                  <div class="w-full px-3 mb-5">
+                <div className="flex -mx-3">
+                  <div className="w-full px-3 mb-5">
                     <button
                       type="submit"
-                      class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
+                      className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
                     >
                       REGISTER NOW
                     </button>

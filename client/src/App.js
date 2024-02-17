@@ -19,6 +19,7 @@ import Logout from "./components/Admin/Logout";
 import UserEdit from "./components/Admin/UserEdit";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader/Loader";
+import NoticeEdit from "./components/Admin/NoticeEdit";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -52,7 +53,13 @@ function App() {
               <Route path="edit" element={<UserEdit />} />
             </Route>
           </Route>
-          
+        </Route>
+        <Route path="/admin">
+          <Route path="servicelist" >
+            <Route path=":id" element={<NoticeEdit />}>
+              <Route path="edit" element={<NoticeEdit />} />
+            </Route>
+          </Route>
         </Route>
       </Routes>
       <Footer />

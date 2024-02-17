@@ -1,16 +1,15 @@
-import React, {  useState } from "react";
-
-import NoticeCreate from "./NoticeCreate"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import NoticeCreate from "./NoticeCreate";
 import { toast } from "react-toastify";
 import { useAuth } from "../Store/auth";
 const AdminNotices = () => {
-  
   const [seen, setSeen] = useState(false);
-  const {service,getServices, apiUrl} = useAuth()
+  const { service, getServices, apiUrl } = useAuth();
   function togglePop() {
     setSeen(!seen);
   }
-  
+
   const deleteuser = async (id) => {
     try {
       const response = await fetch(
@@ -46,8 +45,13 @@ const AdminNotices = () => {
               <th scope="col" className="px-3 py-3">
                 Delete
               </th>
+              <th scope="col" className="px-3 py-3">
+                Update
+              </th>
               <th scope="col" className="px-3 text-right text-green-400 py-3">
-                <button className="text-green-400" onClick={togglePop}>Create</button>
+                <button className="text-green-400" onClick={togglePop}>
+                  Create
+                </button>
                 {seen ? <NoticeCreate toggle={togglePop} /> : null}
               </th>
             </tr>
@@ -76,6 +80,14 @@ const AdminNotices = () => {
                     >
                       Delete
                     </button>
+                  </td>
+                  <td className="px-3 py-4 ">
+                    <Link
+                      to={`/admin/servicelist/${user._id}/edit`}
+                      className=" p-2 px-4 bg-green-700 text-white rounded-lg"
+                    >
+                      Edit
+                    </Link>
                   </td>
                   <td className="px-3 py-4"></td>
                 </tr>
