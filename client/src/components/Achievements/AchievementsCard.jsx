@@ -10,8 +10,8 @@ const AchievementsCard = (props) => {
           <img src={props.img} alt="mixed vegetable salad in a mason jar." />
          
         </div>
-        <div className="card_content  hover:text-white hover:bg-orange-400 h-28">
-          <h2 className="card_title">{props.title}</h2>
+        <div className="card_content  hover:text-white hover:bg-orange-400 h-32">
+          <h2 className="card_title pacifico-regular">{props.title}</h2>
         </div>
       </div>
     </li>

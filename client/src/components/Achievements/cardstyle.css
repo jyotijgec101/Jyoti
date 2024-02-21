@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
+.pacifico-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
 .main {
   max-width: 1200px;
   margin: 0 auto;
@@ -107,7 +113,7 @@
   margin: 0 0 24px;
   padding-bottom: 10px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 

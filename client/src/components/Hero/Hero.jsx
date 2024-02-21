@@ -15,7 +15,7 @@ const Hero = () => {
             <br/><span className="text-red-500">Our mission</span> is to offer quality education and guidance to
             underprivileged children. With the unwavering support of our college
             alumini, we have been successfully running this initiative for over
-            a decade. Join us ase we continue to illuminate young minds and
+            a decade. Join us as we continue to illuminate young minds and
             foster a brighter future.
           </div>
         </div>

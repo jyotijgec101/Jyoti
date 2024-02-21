@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 .herobackground{
     background-image: url(/src/components/images/herobackground.png);
     background-repeat: no-repeat;
@@ -12,7 +12,12 @@
    }
 }
 .text-style{
-    font-family: 'Rubik', sans-serif;
+  
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  
+  
 }
 .trans{
     animation: 1s ease-in slideInRight;
