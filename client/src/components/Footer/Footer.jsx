@@ -89,7 +89,7 @@ const Footer = () => {
               <li>
                 <div className="flex flex-row gap-4 items-center">
                   <FaGreaterThan className="text-yellow-500" />
-                  <NavLink to="/certificates">Certificates</NavLink>
+                  <NavLink to="/certificate">Certificates</NavLink>
                 </div>
                 <div className="w-[80%] mt-1  border-[1px] rounded  border-gray-500"></div>
               </li>
