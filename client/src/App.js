@@ -20,6 +20,8 @@ import UserEdit from "./components/Admin/UserEdit";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader/Loader";
 import NoticeEdit from "./components/Admin/NoticeEdit";
+import AdminCertificate from "./components/Admin/AdminCertificate";
+import Certificates from "./components/Certificate/Certificates";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -42,10 +44,12 @@ function App() {
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/logout" element={<Logout />}/>
+        <Route path="/certificate" element={<Certificates />}/>
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="/admin/contacts" element={<AdminContacts />} />
           <Route path="/admin/users" element={<AdminUsers />} />
           <Route path="/admin/notices" element={<AdminNotices />} />
+          <Route path="/admin/certificates" element={<AdminCertificate />} />
         </Route>
         <Route path="/admin">
           <Route path="users" >

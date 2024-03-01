@@ -9,6 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [alluser, setalluser] = useState();
   const [allcontacts, setallcontacts] = useState();
   const [service, setservice] = useState();
+  const [displaycertificate, setdisplaycertificate] = useState();
   const apiUrl = process.env.REACT_APP_JYOTI_API;
   const storeToken = (serverToken) => {
     settoken(serverToken);
@@ -72,6 +73,16 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const displayCertificate = async()=>{
+    const response = await fetch(`${apiUrl}/api/admin/display_certificate`,{
+      method: "GET",
+    });    
+    if(response.ok){
+      const data = await response.json();
+      setdisplaycertificate(data);
+    }
+  }
+
   useEffect(() => {
     userAuthentication();
   }, []);
@@ -83,6 +94,9 @@ export const AuthProvider = ({ children }) => {
   }, []);
   useEffect(() => {
     getServices();
+  }, []);
+  useEffect(() => {
+    displayCertificate();
   }, []);
 
   return (
@@ -102,6 +116,8 @@ export const AuthProvider = ({ children }) => {
         getAllUsers,
         service,
         getServices,
+        displaycertificate,
+        displayCertificate,
       }}
     >
       {children}

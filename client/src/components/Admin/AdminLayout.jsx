@@ -38,6 +38,16 @@ const AdminLayout = () => {
             isActive ? { backgroundColor: "#e88146" } : {}
         }>Notices</NavLink>
           </li>
+          <li>
+            <NavLink to="/admin/certificates" className="text-xl" style={({ isActive }) =>
+            isActive ? { backgroundColor: "#e88146" } : {}
+        }>Certificates</NavLink>
+          </li>
+          <li>
+            <NavLink to="/logout" className="text-xl" style={({ isActive }) =>
+            isActive ? { backgroundColor: "#e88146" } : {}
+        }>Logout</NavLink>
+          </li>
         </ul>
       </nav>
     </div>
