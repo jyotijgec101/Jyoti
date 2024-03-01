@@ -21,7 +21,7 @@ const AdminLayout = () => {
     <div className="lg:m-8 m-2 mt-12   border-[2px] border-black lg:flex overflow-scroll" >
       
     <div className="border-r-2 border-r-red-500  " style={{backgroundColor:"orange"}}>
-      <nav className=" ">
+      <nav className="overflow-scroll ">
         <ul className="lg:grid flex flex-row p-4  text-xl pb-4 font-semibold  lg:gap-4">
           <li>
             <NavLink to="/admin/users" className="text-xl" style={({ isActive }) =>
