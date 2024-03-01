@@ -18,38 +18,67 @@ const AdminLayout = () => {
   }
   return (
     <>
-    <div className="lg:m-8 m-2 mt-12   border-[2px] border-black lg:flex overflow-scroll" >
+    <div className="lg:m-8 m-2 mt-12   border-[2px] border-black flex-col lg:flex-row flex overflow-auto " >
       
-    <div className="border-r-2 border-r-red-500  " style={{backgroundColor:"orange"}}>
-      <nav className="overflow-scroll ">
-        <ul className="lg:grid flex flex-row p-4  text-xl pb-4 font-semibold  lg:gap-4">
+    <div className="border-r-2 overflow-x-auto border-r-red-500  " style={{backgroundColor:"orange"}}>
+      <nav className=" hidden lg:block ">
+        <ul className="lg:grid w-[100%] flex flex-row p-4   text-xl pb-4 font-semibold  lg:gap-4">
           <li>
-            <NavLink to="/admin/users" className="text-xl" style={({ isActive }) =>
+            <NavLink to="/admin/users" className=" p-4 text-xl" style={({ isActive }) =>
             isActive ? { backgroundColor: "#e88146" } : {}
         }>Users</NavLink>
           </li>
           <li>
-            <NavLink to="/admin/contacts" className="text-xl" style={({ isActive }) =>
+            <NavLink to="/admin/contacts" className=" p-4 text-xl" style={({ isActive }) =>
             isActive ? { backgroundColor: "#e88146" } : {}
         }>Contacts</NavLink>
           </li>
           <li>
-            <NavLink to="/admin/notices" className="text-xl" style={({ isActive }) =>
+            <NavLink to="/admin/notices" className="p-4 text-xl" style={({ isActive }) =>
             isActive ? { backgroundColor: "#e88146" } : {}
         }>Notices</NavLink>
           </li>
           <li>
-            <NavLink to="/admin/certificates" className="text-xl" style={({ isActive }) =>
+            <NavLink to="/admin/certificates" className="p-4 text-xl" style={({ isActive }) =>
             isActive ? { backgroundColor: "#e88146" } : {}
         }>Certificates</NavLink>
           </li>
           <li>
-            <NavLink to="/logout" className="text-xl" style={({ isActive }) =>
+            <NavLink to="/logout" className="p-4 text-xl" style={({ isActive }) =>
             isActive ? { backgroundColor: "#e88146" } : {}
         }>Logout</NavLink>
           </li>
         </ul>
       </nav>
+      <div className=" lg:hidden">
+        <ul className="lg:grid w-[100%] flex flex-row p-4   text-xl pb-4 font-semibold  lg:gap-4">
+          <li>
+            <NavLink to="/admin/users" className=" p-4 text-xl" style={({ isActive }) =>
+            isActive ? { backgroundColor: "#e88146" } : {}
+        }>Users</NavLink>
+          </li>
+          <li>
+            <NavLink to="/admin/contacts" className=" p-4 text-xl" style={({ isActive }) =>
+            isActive ? { backgroundColor: "#e88146" } : {}
+        }>Contacts</NavLink>
+          </li>
+          <li>
+            <NavLink to="/admin/notices" className="p-4 text-xl" style={({ isActive }) =>
+            isActive ? { backgroundColor: "#e88146" } : {}
+        }>Notices</NavLink>
+          </li>
+          <li>
+            <NavLink to="/admin/certificates" className="p-4 text-xl" style={({ isActive }) =>
+            isActive ? { backgroundColor: "#e88146" } : {}
+        }>Certificates</NavLink>
+          </li>
+          <li>
+            <NavLink to="/logout" className="p-4 text-xl" style={({ isActive }) =>
+            isActive ? { backgroundColor: "#e88146" } : {}
+        }>Logout</NavLink>
+          </li>
+        </ul>
+      </div>
     </div>
   
   <div className="w-full p-4">

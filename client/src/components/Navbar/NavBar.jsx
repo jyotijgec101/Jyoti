@@ -73,10 +73,10 @@ const NavBar = () => {
       </div>
       <div
         className="lg:hidden bg-orange-400 w-full md:hidden absolute  text-3xl font-medium pl-4 "
-        onClick={handleShow}
+       
       >
         <div>
-          <RxHamburgerMenu className="border-[2px] border-blue-950 my-1 rounded-[3px] " />
+          <RxHamburgerMenu className="border-[2px] border-blue-950 my-1 rounded-[3px]  "   onClick={handleShow}/>
         </div>
       </div>
 
