@@ -244,7 +244,7 @@ const NavBar = () => {
             </li>
             <li>
             <NavLink
-              to="/certificate"
+              to="/verify"
               className="md:text-xl text-[20px] lg:text-[22px]"
               style={({ isActive }) =>
                 isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}

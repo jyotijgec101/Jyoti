@@ -39,7 +39,7 @@ const Certificates = () => {
       <div className=" certiback flex lg:flex-row flex-col md:flex-row lg:justify-evenly md:justify-evenly md:items-center lg:items-center  lg:gap-14 gap-8   p-10  rounded-lg lg:w-[80%] md:w-full lg:h-[60vh] h-[60vh]">
         <div className="lg:w-[30%]">
           <h2
-            className="lg:text-5xl text-center text-3xl font-medium lg:text-left lg:pt-0 md:pt-0 pt-12  text-white"
+            className="lg:text-5xl font-serif text-center text-3xl font-medium lg:text-left lg:pt-0 md:pt-0 pt-12  text-white"
             style={{ lineHeight: "1.5em" }}
           >
             Verify authenticity of certificate

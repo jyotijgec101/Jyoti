@@ -7,6 +7,12 @@ import { NavLink } from "react-router-dom";
 import { FaGreaterThan } from "react-icons/fa6";
 import { FaFacebook, FaLinkedin, FaTelegram } from "react-icons/fa";
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <footer className="lg:p-10 md:p-8 mt-5 pt-8  bg-[#4f181ef1] ">
       <div className="  grid md:grid lg:grid-cols-3 md:grid-cols-3  gap-4  ">
@@ -53,7 +59,7 @@ const Footer = () => {
               <li>
                 <div className="flex flex-row gap-4 items-center">
                   <FaGreaterThan className="text-yellow-500" />
-                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/" onClick={scrollToTop}>Home</NavLink>
                 </div>
                 <div className="w-[80%]  mt-1 border-[1px] rounded  border-gray-500"></div>
               </li>
@@ -62,7 +68,7 @@ const Footer = () => {
               <li>
                 <div className="flex flex-row gap-4 items-center">
                   <FaGreaterThan className="text-yellow-500" />
-                  <NavLink to="/gallery">Gallery</NavLink>
+                  <NavLink to="/gallery" onClick={scrollToTop}>Gallery</NavLink>
                 </div>
                 <div className="w-[80%]  mt-1 border-[1px] rounded  border-gray-500"></div>
               </li>
@@ -71,7 +77,7 @@ const Footer = () => {
               <li>
                 <div className="flex flex-row gap-4 items-center">
                   <FaGreaterThan className="text-yellow-500" />
-                  <NavLink to="/team">Team</NavLink>
+                  <NavLink to="/team" onClick={scrollToTop}>Team</NavLink>
                 </div>
                 <div className="w-[80%]  mt-1 border-[1px] rounded  border-gray-500"></div>
               </li>
@@ -80,7 +86,7 @@ const Footer = () => {
               <li>
                 <div className="flex flex-row gap-4 items-center">
                   <FaGreaterThan className="text-yellow-500" />
-                  <NavLink to="/notice">Notice</NavLink>
+                  <NavLink to="/notice" onClick={scrollToTop}>Notice</NavLink>
                 </div>
                 <div className="w-[80%]  mt-1 border-[1px] rounded  border-gray-500"></div>
               </li>
@@ -89,7 +95,7 @@ const Footer = () => {
               <li>
                 <div className="flex flex-row gap-4 items-center">
                   <FaGreaterThan className="text-yellow-500" />
-                  <NavLink to="/certificate">Certificates</NavLink>
+                  <NavLink to="/verify" onClick={scrollToTop}>Certificates</NavLink>
                 </div>
                 <div className="w-[80%] mt-1  border-[1px] rounded  border-gray-500"></div>
               </li>
@@ -98,7 +104,7 @@ const Footer = () => {
               <li>
                 <div className="flex flex-row gap-4 items-center">
                   <FaGreaterThan className="text-yellow-500" />
-                  <NavLink to="/contact">Contact</NavLink>
+                  <NavLink to="/contact" onClick={scrollToTop}>Contact</NavLink>
                 </div>
                 <div className=" w-[80%]  mt-1 border-[1px] rounded  border-gray-500"></div>
               </li>

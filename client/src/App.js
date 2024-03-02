@@ -44,7 +44,7 @@ function App() {
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/logout" element={<Logout />}/>
-        <Route path="/certificate" element={<Certificates />}/>
+        <Route path="/verify" element={<Certificates />}/>
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="/admin/contacts" element={<AdminContacts />} />
           <Route path="/admin/users" element={<AdminUsers />} />
