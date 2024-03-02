@@ -61,8 +61,8 @@ const NoticeEdit = () => {
 
   return (
     <>
-      <div className=" flex justify-center  bg-gray-300  px-5 py-5">
-        <div className="bg-gray-100 w-[40%]  text-gray-500 rounded-3xl shadow-xl  overflow-hidden ">
+      <div className=" flex justify-center  bg-gray-300 py-14  lg:px-5 lg:py-5">
+        <div className="bg-gray-100 lg:w-[40%]  text-gray-500 rounded-3xl shadow-xl  overflow-hidden ">
           <div className="">
             
             <div className=" py-10 ">
