@@ -71,12 +71,12 @@ const NavBar = () => {
           alt=""
         />
       </div>
-      <div
-        className="lg:hidden navtop w-full md:hidden absolute  text-3xl font-medium pl-4 "
-       
-      >
+      <div className="lg:hidden navtop w-full md:hidden absolute  text-3xl font-medium pl-4 ">
         <div>
-          <RxHamburgerMenu className="border-[2px] border-blue-950 my-1 rounded-[3px]  "   onClick={handleShow}/>
+          <RxHamburgerMenu
+            className="border-[2px] border-blue-950 my-1 rounded-[3px]  "
+            onClick={handleShow}
+          />
         </div>
       </div>
 
@@ -192,7 +192,10 @@ const NavBar = () => {
                 className="md:text-xl text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
-                    ? { backgroundColor: "rgba(189, 125, 30, 0.587)",width:"100%" }
+                    ? {
+                        backgroundColor: "rgba(189, 125, 30, 0.587)",
+                        width: "100%",
+                      }
                     : {}
                 }
                 onClick={scrollToTop}
@@ -243,17 +246,19 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li>
-            <NavLink
-              to="/verify"
-              className="md:text-xl text-[20px] lg:text-[22px]"
-              style={({ isActive }) =>
-                isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}
-              }
-              onClick={scrollToTop}
-            >
-              Certificate
-            </NavLink>
-          </li>
+              <NavLink
+                to="/verify"
+                className="md:text-xl text-[20px] lg:text-[22px]"
+                style={({ isActive }) =>
+                  isActive
+                    ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
+                    : {}
+                }
+                onClick={scrollToTop}
+              >
+                Certificate
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to="/support"
@@ -303,7 +308,7 @@ const NavBar = () => {
           </ul>
         </nav>
       ) : null}
-      <div className="w-full h-[6px] bg-[#412913]"></div>
+      <div className="w-full h-[6px]  bg-[#412913]"></div>
     </>
   );
 };

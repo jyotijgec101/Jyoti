@@ -1,8 +1,22 @@
 import React, { useEffect } from "react";
 import { useAuth } from "../Store/auth";
+import { toast } from "react-toastify";
 
 const AdminContacts = () => {
-  const { getAllContacts, allcontacts } = useAuth();
+  const { getAllContacts, allcontacts, apiUrl } = useAuth();
+  const deletecontact = async(id)=>{
+    try {
+      const response = await fetch(`${apiUrl}/api/admin/contacts_delete/${id}`,{
+        method: "DELETE"
+      })
+      if(response.ok){
+        toast.success("Contact deleted successfully");
+        getAllContacts();
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
   useEffect(() => {
     getAllContacts();
   }, []);
@@ -28,6 +42,9 @@ const AdminContacts = () => {
               <th scope="col" className="px-3 py-3">
                 Message
               </th>
+              <th scope="col" className="px-3 py-3">
+                Delete
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -47,6 +64,9 @@ const AdminContacts = () => {
                   <td className="px-3 py-4">{user.telephone}</td>
                   <td className="px-3 py-4">{user.subject}</td>
                   <td className="px-3 py-4">{user.message}</td>
+                  <td className="px-3 py-4  ">
+                    <button className=" p-2 px-3 bg-red-700 text-white rounded-lg" onClick={() => deletecontact(user._id)}>Delete</button>
+                  </td>
                 </tr>
               ))}
           </tbody>
