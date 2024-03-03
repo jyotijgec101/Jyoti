@@ -36,6 +36,15 @@ const getAllContacts = async (req, res) => {
     next(error);
   }
 };
+const deleteContacts = async(req,res)=>{
+  try {
+    const id = req.params.id;
+    await  Contact.deleteOne({_id : id});
+    return res.status(200).json({message:"Deleted Successfully!"});
+  } catch (error) {
+    console.log(error);
+  }
+}
 const getuserdeletebyid = async (req, res) => {
   try {
     const token = req.header("Authorization");
@@ -131,4 +140,5 @@ module.exports = {
   updateuser,
   getSinglenotice,
   updatenotice,
+  deleteContacts
 };

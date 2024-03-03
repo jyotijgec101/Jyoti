@@ -15,4 +15,5 @@ router.route('/servicelist/update/:id').patch(admin.updatenotice);
 router.route('/post_certificate').post(certificate.postcertificate);
 router.route('/display_certificate').get(certificate.displayCertificate);
 router.route('/delete_certificate/:id').delete(certificate.deletecertificate);
+router.route('/contacts_delete/:id').delete(admin.deleteContacts);
 module.exports=router;
