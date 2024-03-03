@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="bg-orange-400 flex items-center justify-center">
+      <div className="navtop flex items-center justify-center">
         <div
           className="text-center slidedown1 heading md:text-2xl lg:text-3xl text-sm p-4 font-semibold  "
           style={{ color: "rgb(98, 62, 8)" }}
@@ -72,7 +72,7 @@ const NavBar = () => {
         />
       </div>
       <div
-        className="lg:hidden bg-orange-400 w-full md:hidden absolute  text-3xl font-medium pl-4 "
+        className="lg:hidden navtop w-full md:hidden absolute  text-3xl font-medium pl-4 "
        
       >
         <div>
@@ -177,7 +177,7 @@ const NavBar = () => {
       {!show ? (
         <nav className=" top-0    w-full bg-orange-400  z-10 sticky overflow-hidden">
           <div
-            className="lg:hidden pt-2 bg-orange-400 w-full md:hidden  flex justify-end   text-2xl font-bold p-4 "
+            className="lg:hidden pt-2 navtop w-full md:hidden  flex justify-end   text-2xl font-bold p-4 "
             onClick={handleShow}
           >
             <div className="border-[2px] border-amber-800 rounded-[4px] p-1 bg-[#ffffff46]">

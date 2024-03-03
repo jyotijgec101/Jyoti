@@ -1,6 +1,6 @@
 .certiback{
-    background: rgb(232,187,88);
-    background: linear-gradient(90deg, rgba(232,187,88,1) 0%, #ff9148 100%);
+    background: rgb(255,221,89);
+    background: linear-gradient(90deg, rgba(255,221,89,1) 0%, rgba(255,145,77,1)100%);
 }
 .verify{
     background-color: #890808

@@ -14,17 +14,17 @@ import "./teamstyle.css"
 const data = [
   {
     id: 1,
-    name: "Dr. Soupayan Mitra",
-    department: "HOD (ME), JGEC",
-    position: "President-Jyoti",
-    image:
-      "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
-  },
-  {
-    id: 2,
     name: "Dr. Amitava Ray",
     department: "Principal, JGEC",
     position: "Advisor",
+    image:
+    "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
+  },
+  {
+    id: 2,
+    name: "Dr. Soupayan Mitra",
+    department: "HOD (ME), JGEC",
+    position: "President-Jyoti",
     image:
       "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
   },
