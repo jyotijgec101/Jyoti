@@ -256,7 +256,7 @@ const NavBar = () => {
                 }
                 onClick={scrollToTop}
               >
-                Certificate
+                Verify
               </NavLink>
             </li>
             <li>

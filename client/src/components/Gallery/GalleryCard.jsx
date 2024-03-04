@@ -52,12 +52,12 @@ const Gallery = ({galleryImages},props) => {
         </div>
       }
 
-      <div className='galleryWrap grid lg:grid-cols-3 grid-cols-2 gap-2 lg:gap-6' >
+      <div className='galleryWrap grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-2 lg:gap-6' >
         {
           galleryImages && galleryImages.map((slide, index) => {
             return(
               <div 
-                className='single border-[6px] hover:scale-105 transition-transform border-slate-700' 
+                className='single lg:border-[6px] border-[4px] hover:scale-105 transition-transform border-slate-700' 
                 style={{ boxShadow: "0 8px 40px rgba(0, 0, 0, 0.3)" }}
                 key={index}
                 onClick={ () => handleOpenModal(index) }
