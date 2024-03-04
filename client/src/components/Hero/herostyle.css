@@ -2,8 +2,9 @@
 .herobackground{
     background-image: url(/src/components/images/herobackground.png);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: cover;
+  
     
 }
 @media (max-width: 480px ) {
@@ -11,6 +12,11 @@
     background-image: url(/src/components/images/paper.png);
    }
 }
+/* @media (min-width: 768px) and (max-width: 1024px){
+  .herobackground{
+    background-size: 120%;
+   }
+} */
 .text-style{
   
     font-family: "Protest Riot", sans-serif;

@@ -54,7 +54,7 @@ const Achievements = () => {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      var elementVisible = 200;
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -69,7 +69,7 @@ const Achievements = () => {
   return (
     <div className='  bg-[#eee8e8c5] mb-4   md:p-10 p-2 lg:p-10 '>
       <div className='border-[1px] mb-16 border-amber-800 w-full'></div>
-      <div className='flex reveal slidedown justify-center pb-7 items-center flex-col'>
+      <div className='flex lg:reveal slidedown justify-center pb-7 items-center flex-col'>
         <div className='font-medium  text-amber-700 md:text-4xl  text-3xl lg:text-4xl'>Achievements</div>
         <div className="border-[3px] mt-1  rounded  border-orange-800 w-[15%] lg:w-[8%]"></div>
       </div>
@@ -112,7 +112,7 @@ const Achievements = () => {
         // pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
         
-        className="mySwipe reveal slideup "
+        className="mySwipe lg:reveal slideup "
       >
        {data.map((e) => (
                         <SwiperSlide >

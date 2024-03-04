@@ -175,7 +175,7 @@ const NavBar = () => {
         </ul>
       </nav>
       {!show ? (
-        <nav className=" top-0    w-full bg-orange-400  z-10 sticky overflow-hidden">
+        <nav className=" top-0  slideleft  w-full bg-orange-400  z-10 sticky overflow-hidden">
           <div
             className="lg:hidden pt-2 navtop w-full md:hidden  flex justify-end   text-2xl font-bold p-4 "
             onClick={handleShow}

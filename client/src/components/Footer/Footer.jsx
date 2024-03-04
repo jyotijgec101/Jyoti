@@ -165,7 +165,7 @@ const Footer = () => {
       </div>
       <div className="border-[1px] mt-14 border-gray-600"></div>
       <span className="block pb-4 lg:text-sm mt-4 text-xs text-gray-500 text-center dark:text-gray-400">
-        © 2023{" "}
+        © 2024{" "}
         <a href="/" className="hover:underline">
           Jyoti JGEC™
         </a>

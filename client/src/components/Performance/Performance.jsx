@@ -70,7 +70,7 @@ const Achievements = () => {
       <div className=" p-6  text-center ">
         <div className="flex reveal slidedown justify-center items-center flex-col">
           <div className="font-medium  text-amber-700 md:text-4xl  text-3xl lg:text-4xl">
-            Performance & Adwards
+            Performance & Awards
           </div>
           <div className="border-[3px] mt-2  rounded  border-orange-800 w-[15%] lg:w-[8%]"></div>
         </div>
