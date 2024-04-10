@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+.herobackground{
+    background-image: url(/src/components/images/herobackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    
+}
+@media (max-width: 480px ) {
+   .herobackground{
+    background-image: url(/src/components/images/paper.png);
+   }
+}
+/* @media (min-width: 768px) and (max-width: 1024px){
+  .herobackground{
+    background-size: 120%;
+   }
+} */
+.text-style{
+  
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  
+  
+}
+.trans{
+    animation: 1s ease-in slideInRight;
+}
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
