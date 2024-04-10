@@ -36,7 +36,7 @@ const Certificates = () => {
   };
   return (
     <div className="flex justify-center px-8 pt-14 lg:p-14 items-center">
-      <div className=" certiback flex lg:flex-row flex-col md:flex-col lg:justify-evenly md:justify-evenly md:items-center lg:items-center  lg:gap-12 gap-8 p-10  rounded-lg lg:w-[80%] md:w-full lg:h-[60vh] h-[60vh]">
+      <div className=" certiback flex mx-4 lg:flex-row flex-col md:flex-col lg:justify-evenly md:justify-evenly md:items-center lg:items-center  lg:gap-12 gap-8 p-10  rounded-lg lg:w-[80%] md:w-full lg:h-[60vh] h-[60vh]">
         <div className="lg:w-[30%]">
           <h2
             className="lg:text-6xl font-serif text-center text-3xl md:text-[45px] font-[540] lg:text-left lg:pt-0 md:pt-0 pt-12  text-white"
