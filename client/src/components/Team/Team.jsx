@@ -135,10 +135,10 @@ const Team = () => {
       <div className="items-center pb-4 lg:h-auto pt-8 lg:p-8 text-[#9e9cb6]">
         <div className="flex flex-col justify-center items-center pb-10">
 
-        <div className="text-[#915f2e] slideleft font-medium  text-[34px] ">
+        <div className="text-[#915f2e] tinos-regular slideleft font-medium lg:text-5xl  text-[38px] ">
           Core Team - JYOTI
         </div>
-        <div className="border-[3px] rounded m-1 border-amber-700 slideright w-[5%]"></div>
+        <div className="border-[3px] rounded m-1 border-amber-700 slideright w-[25%] lg:w-[5%]"></div>
         </div>
         
         <div className="flex justify-center fadein flex-wrap gap-8 ">

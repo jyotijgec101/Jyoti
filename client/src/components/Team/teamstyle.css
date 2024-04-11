@@ -1,3 +1,40 @@
-.teambackground{
-    background-image: url(/src/components/images/paper.png);
+.teambackground {
+  background-image: url(/src/components/images/paper.png);
+}
+.social-icons {
+  /* border: 1px solid black; */
+  
+  border-radius: 4px;
+  
+  padding: 12px;
+  background: linear-gradient(
+      to left,
+      rgb(239, 154, 57) 50%,
+      rgba(227, 160, 113, 1) 0%,
+      rgb(0, 139, 225) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  border: none;
+}
+.social-icons i {
+  font-size: 22px;
+  color: white;
+}
+.loginbutton {
+  background: linear-gradient(
+      to left,
+      rgba(250, 128, 114, 0) 50%,
+      rgb(238, 69, 7) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.social-icons:hover {
+  background-position:left;
+  color: aliceblue;
 }

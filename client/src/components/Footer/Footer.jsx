@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="flex items-center gap-1">
               <MdEmail className="text-xl"/>
               <p className="text-white font-medium text-[18px]">
-                info@jyotijgec.ac.in
+              jyoti@jgec.ac.in
               </p>
             </div>
           </div>

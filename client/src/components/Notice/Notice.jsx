@@ -7,7 +7,7 @@ const Notice = () => {
   return (
     <div className=" flex-col noticeback  h-full">
       <div className="flex justify-center pt-8  items-center flex-col">
-        <h3 className="text-center font-semibold slidedown1 text-4xl text-amber-700 pt-5 ">
+        <h3 className="text-center tinos-regular font-semibold slidedown1 text-4xl text-amber-700 pt-5 ">
           NOTICE BOARD
         </h3>
         <div className="border-[2px] border-amber-600 mt-2 w-[10%]"></div>

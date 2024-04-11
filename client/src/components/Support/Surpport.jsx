@@ -4,7 +4,7 @@ import statebanklogo from "../images/statebanklogo.png"
 const Support = () => {
   return (
     <div className="supportbackground pb-10">
-      <p className="lg:text-[48px] text-center md:text-6xl text-4xl pb-4 pt-10 slidedown1 underline " style={{color: "rgb(98, 62, 8)"}}>
+      <p className="lg:text-[48px] tinos-regular text-center md:text-6xl text-4xl pb-4 pt-10 slidedown1 underline " style={{color: "rgb(98, 62, 8)"}}>
         Support Us
       </p>
       <div className="flex lg:flex-row md:flex-col flex-col  md:gap-8 lg:gap-14 p-4  md:p-8 lg:px-28">

@@ -26,9 +26,9 @@ const AdminCertificate = () => {
   }
   return (
     <>
-    <div className="relative overflow-x-auto">
+    <div className="relative overflow-y-auto h-[50vh] overflow-x-auto">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs  uppercase bg-gray-700 text-gray-400">
+          <thead className="text-xs top-0 sticky  uppercase bg-gray-700 text-gray-400">
             <tr className="text-sm">
               <th scope="col" className="px-3 py-3">
                 Name
@@ -36,9 +36,9 @@ const AdminCertificate = () => {
               <th scope="col" className="px-3 py-3">
                 Certificate No.
               </th>
-              <th scope="col" className="px-3 py-3">
+              {/* <th scope="col" className="px-3 py-3">
                 Printed
-              </th>
+              </th> */}
               <th scope="col" className="px-3 py-3">
                 Delete
               </th>
@@ -64,7 +64,7 @@ const AdminCertificate = () => {
                     {user.name}
                   </th>
                   <td className="px-3 py-4">{user.certinumber}</td>
-                  <td className="px-3 py-4">{user.printed? "Yes": "No"}</td>
+                  {/* <td className="px-3 py-4">{user.printed? "Yes": "No"}</td> */}
                   <td className="px-3 py-4 ">
                     <button
                       className=" p-2 px-3 bg-red-700 text-white rounded-lg"

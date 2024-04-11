@@ -20,6 +20,7 @@ const NavBar = () => {
       top: 0,
       behavior: "smooth",
     });
+    setshow(true)
   };
 
   return (

@@ -6,7 +6,7 @@ const CertificateCreate = (props) => {
     const [data, setdata] = useState({
       name:"",
       certinumber:"",
-      printed:""
+      // printed:""
     });
     
     const handlesubmit = async (e) => {
@@ -26,7 +26,7 @@ const CertificateCreate = (props) => {
           setdata({
               name:"",
               certinumber:"",
-              printed:""
+              // printed:""
           });
           displayCertificate();
         }
@@ -67,7 +67,7 @@ const CertificateCreate = (props) => {
               placeholder="Certificate No."
               required
             />
-            <input
+            {/* <input
             
                
                 type="boolean"
@@ -77,7 +77,7 @@ const CertificateCreate = (props) => {
                 placeholder='is Printed?'
                 className="block p-10 text w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 
-              ></input>
+              ></input> */}
             <button type="submit">Send</button>
           </form>
           <button onClick={props.toggle}>Close</button>

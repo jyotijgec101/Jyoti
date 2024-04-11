@@ -35,8 +35,8 @@ const Certificates = () => {
     }
   };
   return (
-    <div className="flex justify-center px-8 pt-14 lg:p-14 items-center">
-      <div className=" certiback flex mx-4 lg:flex-row flex-col md:flex-col lg:justify-evenly md:justify-evenly md:items-center lg:items-center  lg:gap-12 gap-8 p-10  rounded-lg lg:w-[80%] md:w-full lg:h-[60vh] h-[60vh]">
+    <div className="flex justify-center lg:px-8 pt-14 lg:p-14 items-center">
+      <div className=" certiback w-full flex mx-4 lg:flex-row flex-col md:flex-col lg:justify-evenly md:justify-evenly md:items-center lg:items-center  lg:gap-12 gap-8 p-10  rounded-lg lg:w-[80%] md:w-full lg:h-[60vh] h-[60vh]">
         <div className="lg:w-[30%]">
           <h2
             className="lg:text-6xl font-serif text-center text-3xl md:text-[45px] font-[540] lg:text-left lg:pt-0 md:pt-0 pt-12  text-white"
@@ -45,7 +45,7 @@ const Certificates = () => {
             Verify authenticity of certificate
           </h2>
         </div>
-        <div className="flex gap-2 p-4 lg:justify-center lg:items-center flex-col lg:mt-14 lg:w-[40%] lg:h-[50vh]  pb-14">
+        <div className="flex lg:gap-2 lg:p-4 lg:justify-center lg:items-center flex-col lg:mt-14 lg:w-[40%] lg:h-[50vh]  pb-14">
           <form
             onSubmit={handlesubmit}
             className="flex lg:mt-14   lg:h-[20vh] md:h-[15vh] "
@@ -56,7 +56,7 @@ const Certificates = () => {
                 name="certinumber"
                 onChange={handleinput}
                 value={findCertificate.certinumber}
-                className="lg:p-4 md:p-4 p-[0.85em] pr-10 md:pr-32 lg:pr-32 focus:outline-none rounded-lg  placeholder:text-[15px][appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
+                className="lg:p-4 md:p-4 p-[0.85em] w-[100%] pr-1 md:pr-32 lg:pr-32 focus:outline-none rounded-lg  placeholder:text-[15px][appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
                 "
                 required
                 placeholder="Certificate No."
