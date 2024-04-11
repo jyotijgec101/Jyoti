@@ -9,10 +9,10 @@ const certificateSchema = mongoose.Schema(
             type:Number,
             required: true ,
         },
-        printed: {
-            type:Boolean,
-            required: true,
-        }
+        // printed: {
+        //     type:Boolean,
+        //     required: true,
+        // }
     }
 )
 const  Certificate= mongoose.model('Certificate',certificateSchema);

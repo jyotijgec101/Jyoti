@@ -1,11 +1,10 @@
 const Certificate = require("../model/certificate-model");
 const postcertificate = async (req, res) => {
   try {
-    const { name, certinumber, printed } = req.body;
+    const { name, certinumber } = req.body;
     const certificatecreated = await Certificate.create({
       name,
       certinumber,
-      printed,
     });
     res.status(201).json(certificatecreated);
   } catch (error) {
