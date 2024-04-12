@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <>
-      <div id="container1" className="fadein">
+      <div id="container1" className=" fadein">
         <h1 className="heading1">&bull; Keep in Touch &bull;</h1>
         <div className="underline1"></div>
         <div className="icon_wrapper">

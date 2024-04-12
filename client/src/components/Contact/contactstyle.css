@@ -5,6 +5,7 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background: #F2F3EB;
+  
 }
 .contactback{
   
@@ -190,7 +191,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
   #container1 {
-    margin: 40px auto;
+    margin: 60px auto;
     width: 95%;
   }
 }

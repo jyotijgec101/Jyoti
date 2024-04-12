@@ -42,3 +42,50 @@ nav a:hover {
   background: rgb(255,221,89);
 background: linear-gradient(90deg, rgba(255,221,89,1) 0%, rgba(255,145,77,1) 100%);
 }
+.nav-1{
+  animation: navslideInLeft 0.3s ease-out;
+}
+.nav-2{
+  animation: navslideInLeft 0.4s ease-out;
+}
+.nav-3{
+  animation: navslideInLeft 0.5s ease-out;
+}
+.nav-4{
+  animation: navslideInLeft 0.6s ease-out;
+}
+.nav-5{
+  animation: navslideInLeft 0.7s ease-out;
+}
+.nav-6{
+  animation: navslideInLeft 0.8s ease-out;
+}
+.nav-7{
+  animation: navslideInLeft 0.9s ease-out;
+}
+.nav-8{
+  animation: navslideInLeft 1s ease-out;
+}
+@keyframes navslideInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.logo2nd{
+  animation: navslideInRight 0.8s ease-out;
+}
+@keyframes navslideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

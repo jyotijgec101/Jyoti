@@ -56,7 +56,7 @@ const Certificates = () => {
                 name="certinumber"
                 onChange={handleinput}
                 value={findCertificate.certinumber}
-                className="lg:p-4 md:p-4 p-[0.85em] w-[100%] pr-1 md:pr-32 lg:pr-32 focus:outline-none rounded-lg  placeholder:text-[15px][appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
+                className="lg:p-4 md:p-4 p-[0.85em] w-[100%] pr-1 md:pr-32 lg:pr-32  ml-2 mr-4 focus:outline-none rounded-lg  placeholder:text-[15px][appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
                 "
                 required
                 placeholder="Certificate No."

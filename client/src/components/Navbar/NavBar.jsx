@@ -68,7 +68,7 @@ const NavBar = () => {
         </div>
         <img
           src={logo1}
-          className="lg:w-[5%] slideright w-[12%] md:w-[8%] lg:absolute md:right-8 lg:right-14"
+          className="lg:w-[5%] logo2nd w-[12%] md:w-[8%] lg:absolute md:right-8 lg:right-14"
           alt=""
         />
       </div>
@@ -176,7 +176,7 @@ const NavBar = () => {
         </ul>
       </nav>
       {!show ? (
-        <nav className=" top-0    w-full bg-orange-400  z-10 sticky overflow-hidden">
+        <nav className=" top-[150px] absolute w-full bg-orange-400  z-10  overflow-hidden">
           <div
             className="lg:hidden pt-2 navtop w-full md:hidden  flex justify-end   text-2xl font-bold p-4 "
             onClick={handleShow}
@@ -186,11 +186,11 @@ const NavBar = () => {
             </div>
           </div>
 
-          <ul className=" md:flex relative slideleft lg:pt-0 md:pt-0 pt-4 lg:flex block">
+          <ul className=" md:flex relative  lg:pt-0 md:pt-0 pt-4 lg:flex block">
             <li>
               <NavLink
                 to="/"
-                className="md:text-xl text-[20px] lg:text-[22px]"
+                className="md:text-xl nav-1 text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
                     ? {
@@ -207,7 +207,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/gallery"
-                className="md:text-xl text-[20px] lg:text-[22px]"
+                className="md:text-xl nav-2 text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
                     ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
@@ -221,7 +221,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/team"
-                className="md:text-xl text-[20px] lg:text-[22px]"
+                className="md:text-xl nav-3 text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
                     ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
@@ -235,7 +235,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/notice"
-                className="md:text-xl  text-[20px] lg:text-[22px]"
+                className="md:text-xl nav-4 text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
                     ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
@@ -249,7 +249,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/verify"
-                className="md:text-xl text-[20px] lg:text-[22px]"
+                className="md:text-xl nav-5 text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
                     ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
@@ -263,7 +263,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/support"
-                className="md:text-xl text-[20px] lg:text-[22px]"
+                className="md:text-xl nav-6 text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
                     ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
@@ -277,7 +277,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/contact"
-                className="md:text-xl text-[20px] lg:text-[22px]"
+                className="md:text-xl nav-7 text-[20px] lg:text-[22px]"
                 style={({ isActive }) =>
                   isActive
                     ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
@@ -293,7 +293,7 @@ const NavBar = () => {
                 <li>
                   <NavLink
                     to="/admin/users"
-                    className="md:text-xl text-xl lg:text-[22px]"
+                    className="md:text-xl nav-8 text-xl lg:text-[22px]"
                     style={({ isActive }) =>
                       isActive
                         ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }
