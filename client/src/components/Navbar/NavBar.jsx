@@ -20,7 +20,7 @@ const NavBar = () => {
       top: 0,
       behavior: "smooth",
     });
-    setshow(true)
+    setshow(true);
   };
 
   return (
@@ -176,7 +176,7 @@ const NavBar = () => {
         </ul>
       </nav>
       {!show ? (
-        <nav className=" top-0  slideleft  w-full bg-orange-400  z-10 sticky overflow-hidden">
+        <nav className=" top-0    w-full bg-orange-400  z-10 sticky overflow-hidden">
           <div
             className="lg:hidden pt-2 navtop w-full md:hidden  flex justify-end   text-2xl font-bold p-4 "
             onClick={handleShow}
@@ -186,7 +186,7 @@ const NavBar = () => {
             </div>
           </div>
 
-          <ul className=" md:flex  lg:pt-0 md:pt-0 pt-4 lg:flex block">
+          <ul className=" md:flex relative slideleft lg:pt-0 md:pt-0 pt-4 lg:flex block">
             <li>
               <NavLink
                 to="/"
@@ -309,7 +309,7 @@ const NavBar = () => {
           </ul>
         </nav>
       ) : null}
-      <div className="w-full h-[6px]  bg-[#412913]"></div>
+      <div className="w-full h-[6px] hidden lg:block md:block bg-[#412913]"></div>
     </>
   );
 };

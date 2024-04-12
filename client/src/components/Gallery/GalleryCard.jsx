@@ -52,7 +52,7 @@ const Gallery = ({galleryImages},props) => {
         </div>
       }
 
-      <div className='galleryWrap grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-2 lg:gap-6' >
+      <div className='galleryWrap grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 lg:gap-6' >
         {
           galleryImages && galleryImages.map((slide, index) => {
             return(

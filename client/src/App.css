@@ -49,7 +49,7 @@
   animation: 0.8s ease-out  slideDown;
 }
 .slideleft{
-  animation: 0.8s ease-out 0s 1 slideInLeft;
+  animation: 0.8s ease  slideInLeft;
 }
 .slideright{
   animation: 0.8s ease-in slideInRight;
