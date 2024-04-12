@@ -8,7 +8,7 @@ const adminrouter = require("./router/admin-router");
 const certificateRouter = require("./router/certificate-router");
 const connectDb = require("./utils/db");
 const corsoption = {
-    origin : '*',
+    origin : process.env.FRONT_URL,
     methods : "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials : true, 
 }
