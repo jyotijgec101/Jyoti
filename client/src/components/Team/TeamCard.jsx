@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 const TeamCard = (props) => {
   return (
@@ -34,7 +35,7 @@ const TeamCard = (props) => {
             rel="noreferrer"
             className="social-icons items-center flex justify-center "
           >
-            <i class="fab  fa-linkedin-in"></i>
+            <FaLinkedinIn size={20} color="#fff" />
           </a>
         </div>
       </section>
