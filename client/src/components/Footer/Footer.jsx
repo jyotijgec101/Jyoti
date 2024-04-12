@@ -169,7 +169,7 @@ const Footer = () => {
         <a href="/" className="hover:underline">
           Jyoti JGEC™
         </a>
-        . All Rights Reserved.
+        . All Rights Reserved.Made By
       </span>
     </footer>
   );
