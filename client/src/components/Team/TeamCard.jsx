@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa6";
-
+import {LazyLoadImage} from "react-lazy-load-image-component"
 const TeamCard = (props) => {
   return (
     <div>
@@ -15,7 +15,7 @@ const TeamCard = (props) => {
           target="_blank"
           className=" overflow-hidden"
         >
-          <img
+          <LazyLoadImage
             src={props.image}
             className="rounded-full w-[120px] overflow-hidden mx-auto my-10 p-0 border-[6px] box-content border-[#231f39] shadow-[0px_27px_16px_-11px_rgba(31,27,56,0.25)] transition-all duration-150 ease-in hover:scale-105 cursor-pointer slide-in-elliptic-top-fwd "
             alt=""

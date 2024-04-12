@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import TeamCard from "./TeamCard";
 import AyeswariyaAgarwal from "../images/Ayeswariya  Agarwal.jpeg";
 import PriyaangshuDey from "../images/PriyaangshuDey.jpeg";
@@ -129,40 +129,42 @@ const data = [
     link: "https://www.linkedin.com/in/rajdip-mondal-91273923b/",
   },
 ];
-
-const Team = () => {
-  return (
-    <div className="teambackground lg:mt-0 mt-4 ">
-      <div className="items-center pb-4 lg:h-auto pt-8 lg:p-8 text-[#9e9cb6]">
-        <div className="flex flex-col justify-center items-center pb-10">
-          <div className="text-[#915f2e] tinos-regular slideleft font-medium lg:text-5xl  text-[38px] ">
-            Meet Our Core Team
+const scrollToTop=()=>{
+  window.scrollTo(0,0);
+}
+const Team2k23 = () => {
+    return (
+        <div className="teambackground lg:mt-0 mt-4 ">
+          <div className="items-center pb-4 lg:h-auto pt-8 lg:p-8 text-[#9e9cb6]">
+            <div className="flex flex-col justify-center items-center pb-10">
+              <div className="text-[#915f2e] tinos-regular slideleft font-medium lg:text-5xl  text-[38px] ">
+                 Core Team - 2K23
+              </div>
+              <div className="border-[3px] rounded m-1 border-amber-700 slideright w-[25%] lg:w-[5%]"></div>
+            </div>
+    
+            <div className="flex justify-center fadein flex-wrap gap-8 ">
+              {data.map((e) => (
+                <TeamCard
+                  name={e.name}
+                  department={e.department}
+                  position={e.position}
+                  image={e.image}
+                  link={e.link}
+                />
+              ))}
+            </div>
+            <hr className="w-[50%]"/>
+            <div className="flex mt-10 lg:mt-8 h-[8vh] justify-center items-center">
+              <div className="border teambutton cursor-pointer border-black p-5 px-10">
+                <NavLink to="/team" onClick={scrollToTop} className=" tinos-regular text-xl font-[400] shadow-md">
+                  Show 2K24 Team
+                </NavLink>
+              </div>
+            </div>
           </div>
-          <div className="border-[3px] rounded m-1 border-amber-700 slideright w-[25%] lg:w-[5%]"></div>
         </div>
+  )
+}
 
-        <div className="flex justify-center fadein flex-wrap gap-8 ">
-          {data.map((e) => (
-            <TeamCard
-              name={e.name}
-              department={e.department}
-              position={e.position}
-              image={e.image}
-              link={e.link}
-            />
-          ))}
-        </div>
-        <hr className="w-[50%]"/>
-        <div className="flex mt-10 lg:mt-8 h-[8vh] justify-center items-center">
-          <div className="border teambutton cursor-pointer border-black p-5 px-10">
-            <NavLink to="/team2k23" onClick={()=>window.scrollTo(0,0)} className=" tinos-regular text-xl font-[400] shadow-md">
-              Show 2K23 Team
-            </NavLink>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Team;
+export default Team2k23

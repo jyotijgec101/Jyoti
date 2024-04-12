@@ -18,7 +18,7 @@ const NavBar = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      
     });
     setshow(true);
   };
@@ -82,11 +82,11 @@ const NavBar = () => {
       </div>
 
       <nav className="z-10 top-0 w-full bg-orange-400  lg:block md:block hidden sticky overflow-hidden">
-        <ul className=" md:flex slideup1 lg:pt-0 md:pt-0 pt-10 lg:flex block">
+        <ul className=" md:flex  lg:pt-0 md:pt-0 pt-10 lg:flex block">
           <li>
             <NavLink
               to="/"
-              className="md:text-xl  lg:text-[22px]"
+              className="md:text-xl nonmobilenav-1 lg:text-[22px]"
               style={({ isActive }) =>
                 isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}
               }
@@ -98,7 +98,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to="/gallery"
-              className="md:text-xl lg:text-[22px]"
+              className="md:text-xl nonmobilenav-2 lg:text-[22px]"
               style={({ isActive }) =>
                 isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}
               }
@@ -110,7 +110,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to="/team"
-              className="md:text-xl lg:text-[22px]"
+              className="md:text-xl nonmobilenav-3 lg:text-[22px]"
               style={({ isActive }) =>
                 isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}
               }
@@ -122,7 +122,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to="/notice"
-              className="md:text-xl lg:text-[22px]"
+              className="md:text-xl nonmobilenav-4 lg:text-[22px]"
               style={({ isActive }) =>
                 isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}
               }
@@ -134,7 +134,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to="/support"
-              className="md:text-xl lg:text-[22px]"
+              className="md:text-xl nonmobilenav-5 lg:text-[22px]"
               style={({ isActive }) =>
                 isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}
               }
@@ -146,7 +146,7 @@ const NavBar = () => {
           <li>
             <NavLink
               to="/contact"
-              className="md:text-xl lg:text-[22px]"
+              className="md:text-xl nonmobilenav-6 lg:text-[22px]"
               style={({ isActive }) =>
                 isActive ? { backgroundColor: "rgba(189, 125, 30, 0.587)" } : {}
               }
@@ -160,7 +160,7 @@ const NavBar = () => {
               <li>
                 <NavLink
                   to="/admin/users"
-                  className="md:text-xl lg:text-[22px]"
+                  className="md:text-xl nonmobilenav-7 lg:text-[22px]"
                   style={({ isActive }) =>
                     isActive
                       ? { backgroundColor: "rgba(189, 125, 30, 0.587)" }

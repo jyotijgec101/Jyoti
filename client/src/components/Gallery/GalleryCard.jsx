@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import {LazyLoadImage} from "react-lazy-load-image-component"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCircleChevronLeft, 
@@ -47,7 +47,7 @@ const Gallery = ({galleryImages},props) => {
           <FontAwesomeIcon icon={faCircleChevronLeft} className='btnPrev text-4xl' onClick={prevSlide} />
           <FontAwesomeIcon icon={faCircleChevronRight} className='btnNext text-4xl' onClick={nextSlide} />
           <div className='fullScreenImage ' onClick={handleCloseModal}>
-            <img src={galleryImages[slideNumber].img} alt='' />
+            <LazyLoadImage src={galleryImages[slideNumber].img} alt='' />
           </div>
         </div>
       }
@@ -62,7 +62,7 @@ const Gallery = ({galleryImages},props) => {
                 key={index}
                 onClick={ () => handleOpenModal(index) }
               >
-                <img src={slide.img} alt='' />
+                <LazyLoadImage src={slide.img} alt='' />
               </div>
             )
           })
