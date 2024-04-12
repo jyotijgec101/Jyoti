@@ -185,6 +185,7 @@ const NavBar = () => {
               <RxCross1 />
             </div>
           </div>
+          <div className="w-full h-[4px] block lg:hidden md:hidden bg-[#412913]"></div>
 
           <ul className=" md:flex relative  lg:pt-0 md:pt-0 pt-4 lg:flex block">
             <li>
@@ -307,9 +308,11 @@ const NavBar = () => {
               </>
             ) : null}
           </ul>
+          <div className="w-full h-[6px] block lg:hidden md:hidden bg-[#412913]"></div>
         </nav>
+        
       ) : null}
-      <div className="w-full h-[6px] hidden lg:block md:block bg-[#412913]"></div>
+      <div className="w-full h-[6px] hidden  lg:block md:block bg-[#412913]"></div>
     </>
   );
 };
