@@ -10,6 +10,7 @@ import SOURAVGhosh from "../images/SOURAV Ghosh.jpeg";
 import DiyaMaiti from "../images/Diya Maiti.jpeg";
 import RajdipMondal from "..//images/Rajdip Monadal.jpeg";
 import subditoghosh from "../images/subidito ghosh.jpeg";
+import KrishnenduMallick from "../images/KrishnenduMallick.jpg"
 import "./teamstyle.css";
 import {NavLink} from "react-router-dom"
 const data = [
@@ -50,8 +51,7 @@ const data = [
     name: "Krishnendu Mallick",
     department: "ME-2024",
     position: "Cashier-Jyoti",
-    image:
-      "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
+    image:`${KrishnenduMallick}`,
     link: "https://www.linkedin.com/in/krishnendu-mallick-00078516b/",
   },
   {
@@ -127,6 +127,14 @@ const data = [
     position: "Memeber-Jyoti",
     image: `${RajdipMondal}`,
     link: "https://www.linkedin.com/in/rajdip-mondal-91273923b/",
+  },
+  {
+    id: 15,
+    name: "Salman Mandal",
+    department: "CSE-2024",
+    position: "Memeber-Jyoti",
+    image: "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
+    link: "https://www.linkedin.com/in/salman-mandal-795996202/",
   },
 ];
 
