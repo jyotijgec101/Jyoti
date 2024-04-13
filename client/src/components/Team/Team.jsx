@@ -1,5 +1,6 @@
 import React from "react";
 import TeamCard from "./TeamCard";
+import SoupayanMitra from "../images/SoupayanMitra.jpg"
 import AyeswariyaAgarwal from "../images/Ayeswariya  Agarwal.jpeg";
 import PriyaangshuDey from "../images/PriyaangshuDey.jpeg";
 import SOUMISEBAIT from "../images/SoumiSebait.jpeg";
@@ -11,8 +12,11 @@ import DiyaMaiti from "../images/Diya Maiti.jpeg";
 import RajdipMondal from "..//images/Rajdip Monadal.jpeg";
 import subditoghosh from "../images/subidito ghosh.jpeg";
 import KrishnenduMallick from "../images/KrishnenduMallick.jpg"
+import AmitavaRay from "../images/AmitavaRay.jpg"
+import SaikatMitar from "../images/SaikatMitar.jpg"
+import SalmanMandal from "../images/SalmanMandal.jpg"
 import "./teamstyle.css";
-import {NavLink} from "react-router-dom"
+// import {NavLink} from "react-router-dom"
 const data = [
   {
     id: 1,
@@ -20,7 +24,7 @@ const data = [
     department: "Principal, JGEC",
     position: "Advisor",
     image:
-      "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
+      `${AmitavaRay}`,
   },
   {
     id: 2,
@@ -28,7 +32,7 @@ const data = [
     department: "HOD (ME), JGEC",
     position: "President-Jyoti",
     image:
-      "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
+      `${SoupayanMitra}`,
   },
   {
     id: 3,
@@ -85,7 +89,7 @@ const data = [
     department: "EE-2024",
     position: "Memeber-Jyoti",
     image:
-      "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
+      `${SaikatMitar}`,
     link: "https://www.linkedin.com/in/saikat-mitar-674b1220b/",
   },
   {
@@ -133,7 +137,7 @@ const data = [
     name: "Salman Mandal",
     department: "CSE-2024",
     position: "Memeber-Jyoti",
-    image: "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg",
+    image: `${SalmanMandal}`,
     link: "https://www.linkedin.com/in/salman-mandal-795996202/",
   },
 ];
