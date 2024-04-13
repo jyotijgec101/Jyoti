@@ -33,12 +33,12 @@ const Footer = () => {
                 Bengal 735102
               </p>
             </div>
-            <div className="flex items-center gap-1">
+{/*             <div className="flex items-center gap-1">
               <IoIosCall className="text-xl"/>
               <p className="text-white font-medium text-[18px]">
                 +91-xxxxxxxxxx
               </p>
-            </div>
+            </div> */}
             <div className="flex items-center gap-1">
               <MdEmail className="text-xl"/>
               <p className="text-white font-medium text-[18px]">
