@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "../images/Logo.png";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaInstagram, FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { FaGreaterThan } from "react-icons/fa6";
-import { FaFacebook, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -150,13 +150,13 @@ const Footer = () => {
                 </NavLink>
               </div>
               <div className="flex gap-2 text-white font-medium items-center">
-                <FaTelegram className="text-xl text-yellow-600" />
+                <FaInstagram className="text-xl text-yellow-600" />
                 <NavLink
-                  to="https://t.me/jyotijgec"
+                  to="https://www.instagram.com/jyotijgec?igsh=aDNpcHkxM2k0NTAx"
                   className="text-[18px]"
                   target="_blank"
                 >
-                  - Telegram
+                  - Instagram
                 </NavLink>
               </div>
             </div>
@@ -164,13 +164,16 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-[1px] mt-14 border-gray-600"></div>
-      <span className="block pb-4 lg:text-sm mt-4 text-xs text-gray-500 text-center dark:text-gray-400">
+      <span className="block  lg:text-lg mt-4 text-xs text-gray-400 text-center ">
         © 2024{" "}
         <a href="/" className="hover:underline">
           Jyoti JGEC™
         </a>
-        . All Rights Reserved.Made By
+        . All Rights Reserved.
       </span>
+      <div className="block pb-2 lg:text-sm mt-2 text-xs text-center">
+       <span className=" text-amber-400 font-medium" >Made by <a href="https://www.linkedin.com/in/souhardya-deb-921578254/" target="_blank" rel="noreferrer" className="text-white">Souhardya Deb </a> and <a href="https://www.linkedin.com/in/arijit-mitra-984668254/" target="_blank" rel="noreferrer" className="text-white">Arijit Mitra</a></span>
+      </div>
     </footer>
   );
 };
