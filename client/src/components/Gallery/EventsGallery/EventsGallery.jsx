@@ -77,7 +77,7 @@ const EventsGallery = () => {
 
         <div className="flex mt-10 lg:mt-8 h-[8vh] justify-center items-center">
           <div className="border teambutton cursor-pointer border-black p-5 px-10">
-            <NavLink to="https://drive.google.com/drive/folders/10E5U_wIMuOy73tsIGaHVJZ9z-pTDrDJV" onClick={toggleStyle} className=" tinos-regular text-xl font-[400] shadow-md">
+            <NavLink to="https://drive.google.com/drive/folders/10E5U_wIMuOy73tsIGaHVJZ9z-pTDrDJV" target="_blank" onClick={toggleStyle} className=" tinos-regular text-xl font-[400] shadow-md">
               {btn}
             </NavLink>
           </div>
