@@ -14,7 +14,7 @@ import subditoghosh from "../images/subidito ghosh.jpeg";
 import KrishnenduMallick from "../images/KrishnenduMallick.jpg"
 import AmitavaRay from "../images/AmitavaRay.jpg"
 import SaikatMitar from "../images/SaikatMitar.jpg"
-import SalmanMandal from "../images/SalmanMandal.jp"
+import SalmanMandal from "../images/SalmanMandal.jpg"
 import "./teamstyle.css";
 // import {NavLink} from "react-router-dom"
 const data = [
