@@ -1,0 +1,64 @@
+.teambackground {
+  background-image: url(/src/components/images/paper.png);
+}
+.social-icons {
+  /* border: 1px solid black; */
+  
+  border-radius: 4px;
+  
+  padding: 12px;
+  background: linear-gradient(
+      to left,
+      rgb(239, 154, 57) 50%,
+      rgba(227, 160, 113, 1) 0%,
+      rgb(0, 139, 225) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  border: none;
+}
+.social-icons i {
+  font-size: 22px;
+  color: white;
+}
+.loginbutton {
+  background: linear-gradient(
+      to left,
+      rgba(250, 128, 114, 0) 50%,
+      rgb(238, 69, 7) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.social-icons:hover {
+  background-position:left;
+  color: aliceblue;
+}
+.teambutton{
+  transition: 0.2s ease-in;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.909) 50%,
+    rgb(32, 31, 30) 50%,
+    rgb(81, 79, 78) 50%
+  )
+  right;
+  border-radius: 2px;
+  background-size: 200%;
+  color: black;
+  margin-bottom: 20px;
+}
+.teambutton:hover{
+  background-position: left;
+  scale: 1.08;
+  font-weight:normal;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 1px -2px 38px 0px rgba(143,137,143,1);
+-moz-box-shadow: 1px -2px 38px 0px rgba(143,137,143,1);
+box-shadow: 1px -2px 38px 0px rgba(143,137,143,1);
+}
