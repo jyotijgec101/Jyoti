@@ -6,7 +6,7 @@ import photo3 from "./images/photo_3_2023-10-21_13-13-28.jpg";
 import photo4 from "./images/photo_4_2023-10-21_13-13-28.jpg";
 import photo5 from "./images/photo_5_2023-10-21_13-13-28.jpg";
 import photo6 from "./images/photo_6_2023-10-21_13-13-28.jpg";
-
+import { NavLink } from "react-router-dom";
 const EventsGallery = () => {
   const [btn, setbtn] = useState("Show More");
   const [styleimg, setstyleimg] = useState({
@@ -20,6 +20,7 @@ const EventsGallery = () => {
       setstyleimg({ display: "block" });
       setbtn("Show Less");
     }
+    window.scrollTo(0,0);
   };
 
   const galleryImages = [
@@ -74,13 +75,13 @@ const EventsGallery = () => {
           <Gallery galleryImages={galleryImages1} />
         </div>
 
-        <button
-          type="button"
-          class="text-white mt-4 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-          onClick={toggleStyle}
-        >
-          {btn}
-        </button>
+        <div className="flex mt-10 lg:mt-8 h-[8vh] justify-center items-center">
+          <div className="border teambutton cursor-pointer border-black p-5 px-10">
+            <div onClick={toggleStyle} className=" tinos-regular text-xl font-[400] shadow-md">
+              {btn}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
