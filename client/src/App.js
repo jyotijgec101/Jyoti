@@ -22,7 +22,7 @@ import Loader from "./components/Loader/Loader";
 import NoticeEdit from "./components/Admin/NoticeEdit";
 import AdminCertificate from "./components/Admin/AdminCertificate";
 import Certificates from "./components/Certificate/Certificates";
-import Team2k23 from "./components/Team/Team2k23";
+// import Team2k23 from "./components/Team/Team2k23";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -44,7 +44,7 @@ function App() {
         <Route path="/form" element={<Form />} />
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/login" element={<Login />}/>
-        <Route path="/team2k23" element={<Team2k23 />}/>
+        {/* <Route path="/team2k23" element={<Team2k23 />}/> */}
         <Route path="/logout" element={<Logout />}/>
         <Route path="/verify" element={<Certificates />}/>
         <Route path="/admin" element={<AdminLayout />}>
