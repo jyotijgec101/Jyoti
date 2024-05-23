@@ -48,10 +48,12 @@ const Notice = () => {
                                   </div>
                                   <div className="timeline-content">
                                     <a
-                                      href={item.url}
-                                      target="_blank"
+                                      href={item.url?item.url:"#"}
+
+                                      target={item.url?'_blank':''}
+
                                       rel="noreferrer"
-                                      className="text-[18px] font-sans text-black font-medium"
+                                      className={`text-[18px] ${item.url?" cursor-pointer":" cursor-not-allowed"} font-sans text-black font-medium`}
                                     >
                                       {item.title}
                                     </a>
