@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const ServiceSchema = new mongoose.Schema({
     url: {
         type: String,
-        required: true
+        
     },
     title: {
         type: String,
