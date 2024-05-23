@@ -58,7 +58,7 @@ const NoticeCreate = (props) => {
             name="url"
             value={data.url}
             placeholder="URL"
-            required
+
           />
           <input
             type="text"
