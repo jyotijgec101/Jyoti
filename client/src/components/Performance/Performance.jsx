@@ -14,6 +14,7 @@ import jeclet2k23 from "../images/jeclat2k23.jpg";
 import jeclet2k231 from "../images/jeclat2k23 1.jpg";
 import fest2011 from "../images/Fest2011.jpg";
 import "./performancestyle.css";
+import { NavLink } from "react-router-dom";
 const data = [
   {
     id: 1,
@@ -126,11 +127,11 @@ const Achievements = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <a href="/gallery">
-          <button className="bg-transparent mt-2 mb-4 hover:bg-amber-500 hover:transition-colors text-amber-700 font-semibold hover:text-white py-2 px-4 border border-amber-500 hover:border-transparent rounded">
+        <NavLink to="/gallery">
+          <button onClick={()=>window.scrollTo(0,0)} className="bg-transparent mt-2 mb-4 hover:bg-amber-500 hover:transition-colors text-amber-700 font-semibold hover:text-white py-2 px-4 border border-amber-500 hover:border-transparent rounded">
             Show More
           </button>
-        </a>
+        </NavLink>
       </div>
     </div>
   );

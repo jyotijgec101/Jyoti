@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../images/Logo.png";
 import { FaInstagram, FaLocationDot } from "react-icons/fa6";
-import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { FaGreaterThan } from "react-icons/fa6";
@@ -112,11 +111,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex lg:p-0 slideright md:p-0 px-10 pt-8 flex-col">
-          <div className="pb-10">
-            <h2 className=" text-yellow-500 font-medium text-3xl">About Us</h2>
-            <div className=" w-[20%] mt-2 border-[3px] rounded border-orange-600"></div>
+          <div className="pb-8">
+            <div className=" text-yellow-500 font-medium lg:text-[28px] md:text-[22px] text-[24px]">Message from our President</div>
+            <div className=" w-[28%] mt-2 border-[3px] rounded border-orange-600"></div>
           </div>
-          <div className="text-white font-normal lg:text-xl">
+          <div className="text-white font-semibold lg:text-xl">
             JYOTI - A Ray of Hope is indeed a wonderful initiative that provides
             quality education to economically-challenged students from nearby
             villages, slums, and tea gardens. It is truly inspiring to see

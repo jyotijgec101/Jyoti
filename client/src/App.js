@@ -22,6 +22,7 @@ import Loader from "./components/Loader/Loader";
 import NoticeEdit from "./components/Admin/NoticeEdit";
 import AdminCertificate from "./components/Admin/AdminCertificate";
 import Certificates from "./components/Certificate/Certificates";
+import Error from "./components/Error Page/Error";
 // import Team2k23 from "./components/Team/Team2k23";
 function App() {
   const [loading, setLoading] = useState(true);
@@ -67,6 +68,7 @@ function App() {
             </Route>
           </Route>
         </Route>
+        <Route path="*" element={<Error/>}/>
       </Routes>
       <Footer />
     </>

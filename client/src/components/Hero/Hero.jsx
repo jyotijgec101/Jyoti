@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="lg:pt-0 pt-[2em]  flex items-center  ">
           <div className=" font-semibold trans text-style lg:p-8 md:p-2 p-4 md:text-[25px] text-[20px]  lg:text-[32px]  " style={{ color: "rgb(154 99 18)" }}>
             Welcome to Jyoti: A Ray of Hope. This initiative, established in
-            2020, is a testiment to the commitment of the students from JGEC.
+            2010, is a testiment to the commitment of the students from JGEC.
             <br/><span className="text-red-500">Our mission</span> is to offer quality education and guidance to
             underprivileged children. With the unwavering support of our college
             alumini, we have been successfully running this initiative for over
